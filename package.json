@@ -1,26 +1,22 @@
 {
-  "name": "script-inject",
+  "name": "tick",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "emitter": "chokidar-socket-emitter",
-    "server": "http-server",
-    "start": "npm-run-all --parallel emitter server",
-    "build-readme": "babel --no-comments --minified --presets es2015 run-in-console.js >> Readme.md"
-  },
+  "bin": "cli.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eirikb/script-inject.git"
   },
+  "scripts": {
+    "build:console": "babel --no-comments --minified --presets latest --out-file tick.js run-in-console.js",
+    "build:test": "babel --no-comments --plugins transform-es2015-modules-systemjs --minified --presets latest --out-file app.js a.js b.js"
+  },
   "license": "MIT",
   "author": "eirikb@eirikb.no",
   "dependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
     "chokidar-socket-emitter": "0.5.4",
     "http-server": "0.9.0",
     "npm-run-all": "4.0.1"
-  },
-  "devDependencies": {
-    "babel-cli": "6.22.2",
-    "babel-preset-es2015": "6.22.0"
   }
 }
