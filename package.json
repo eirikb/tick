@@ -1,22 +1,28 @@
 {
-  "name": "tick",
+  "name": "tick-cli",
   "version": "1.0.0",
-  "bin": "cli.js",
+  "bin": {
+    "tick": "cli.js"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eirikb/script-inject.git"
+    "url": "git+https://github.com/eirikb/tick.git"
   },
   "scripts": {
-    "build:console": "babel --no-comments --minified --presets latest --out-file tick.js run-in-console.js",
-    "build:test": "babel --no-comments --plugins transform-es2015-modules-systemjs --minified --presets latest --out-file app.js a.js b.js"
+    "build:client": "babel --no-comments --minified --presets latest --out-file client-dist.js client.js"
   },
   "license": "MIT",
   "author": "eirikb@eirikb.no",
+  "devDendencies": {
+    "babel-cli": "^6.23.0"
+  },
   "dependencies": {
-    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
     "babel-preset-latest": "^6.22.0",
-    "chokidar-socket-emitter": "0.5.4",
     "http-server": "0.9.0",
-    "npm-run-all": "4.0.1"
+    "meow": "^3.7.0",
+    "webpack": "^2.2.1",
+    "ws": "^2.2.0"
   }
 }

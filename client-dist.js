@@ -1,0 +1,1 @@
+'use strict';var host='localhost:9001';var ws=new WebSocket('ws://'+host);ws.onmessage=function(){var script=document.createElement('script');script.src='http://'+host+'/main.js?t='+Date.now();document.body.appendChild(script)};ws.onmessage();
