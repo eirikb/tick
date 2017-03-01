@@ -10,7 +10,7 @@ Unlike Hot Module Reloading the script will stay in memory, e.g., a `setInterval
 
 ## Run
 
-    npm i tick
+    npm i tick-cli
     ./node_modules/.bin/tick ./script.js
 
 Then follow the instructions.
