@@ -28,8 +28,8 @@ Then follow the instructions.
 ### Chrome
 1. Open cnn.com
 1. Open DevTools console (F12)
-1. Copy script from terminal 
-1. Then open, edit as follows and save:
+1. Copy script from terminal and paste into DevTools console
+1. Write this into _script.js_ and save the file:
 
 ### _script.js_
     
