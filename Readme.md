@@ -14,3 +14,25 @@ Unlike Hot Module Reloading the script will stay in memory, e.g., a `setInterval
     ./node_modules/.bin/tick ./script.js
 
 Then follow the instructions.
+
+
+## Example
+
+### Terminal
+
+    $ npm i -g tick-cli
+    $ npm i jquery
+    $ touch script.js
+    $ tick ./script.js
+
+### Chrome
+1. Open cnn.com
+1. Open DevTools console (F12)
+1. Copy script from terminal 
+1. Then open, edit as follows and save:
+
+### _script.js_
+    
+    import $ from 'jquery'
+    
+    $('h2,h3').each((i, n) => $(n).text($(n).text() + ', lol'));
