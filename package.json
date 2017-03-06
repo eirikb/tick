@@ -1,6 +1,6 @@
 {
   "name": "tick-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "tick": "cli.js"
   },
@@ -8,19 +8,14 @@
     "type": "git",
     "url": "git+https://github.com/eirikb/tick.git"
   },
-  "scripts": {
-    "build:client": "babel --no-comments --minified --presets latest --out-file client-dist.js client.js"
-  },
   "license": "MIT",
   "author": "eirikb@eirikb.no",
-  "devDendencies": {
-    "babel-cli": "^6.23.0"
-  },
   "dependencies": {
     "babel-core": "^6.23.1",
-    "babel-loader": "^6.3.2",
-    "babel-preset-latest": "^6.22.0",
-    "http-server": "0.9.0",
+    "babel-loader": "^6.4.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.2.0",
+    "memory-fs": "^0.4.1",
     "meow": "^3.7.0",
     "webpack": "^2.2.1",
     "ws": "^2.2.0"

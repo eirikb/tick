@@ -1,19 +1,22 @@
 # tick
 
-For testing purposes, and general DevTools console hacking.
+For testing purposes, and general DevTools console hacking.  
+If you use a lot of console, snippets or workspace this could be a nice alternative.  
+Great for testing APIs (like Postman, just via scripting).
 
-Injects custom script on change into any running page.  
-I often use DevTools, and create snippets or use workspace, this is a cross-browser alternative.  
-The script will essentially be re-injected on every save.
-Unlike Hot Module Reloading the script will stay in memory, e.g., a `setInterval` will never be removed / cleaned up.
-
+  * Supports ES6 modules (e.g., `import { first } from 'lodash'`).
+  * Supports "env" from Babel (e.g., `async/await`) out of box.
+  * Cross-browser support.
+  * Works on HTTPS-sites without certificate hassle.
+  * Script is injected on-save (note, it is *not* HMR, scripts are never cleared, `setInterval` will exist forever).
+  * Scripts are just files, so git works great.
 
 ## Run
 
     npm i tick-cli
     ./node_modules/.bin/tick ./script.js
 
-Then follow the instructions.
+Then copy the script snippet from terminal into browser console.
 
 
 ## Example
@@ -26,10 +29,10 @@ Then follow the instructions.
     $ tick ./script.js
 
 ### Chrome
-1. Open cnn.com
-1. Open DevTools console (F12)
-1. Copy script from terminal and paste into DevTools console
-1. Write this into _script.js_ and save the file:
+1. Open cnn.com.
+1. Open DevTools console (F12).
+1. Copy script from terminal and paste into DevTools console.
+1. Put following code into _script.js_ and save the file:
 
 ### _script.js_
     
