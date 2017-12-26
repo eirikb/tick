@@ -18,7 +18,7 @@ Great for testing APIs (like Postman, just via scripting).
     npm i tick-cli
     ./node_modules/.bin/tick ./script.js
 
-Then copy the script snippet from terminal into browser console.
+Then copy the script snippet from terminal into DevTools console.
 
 ## License
 
