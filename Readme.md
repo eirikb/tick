@@ -1,6 +1,7 @@
 # tick
 
 ![Example](https://i.imgur.com/rKXWueE.png)
+Example of reddit api using Chrome.
 
 For testing purposes, and general DevTools console hacking.  
 If you use a lot of console, snippets or workspace this could be a nice alternative.  
