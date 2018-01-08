@@ -33,6 +33,9 @@ const compiler = webpack({
       test: /\.js$/,
       exclude: /(node_modules|bower_components)/,
       loader: 'babel-loader?presets[]=env'
+    }, {
+      test: /\.txt$/,
+      use: 'raw-loader'
     }]
   }
 });
