@@ -32,7 +32,7 @@ const compiler = webpack({
     loaders: [{
       test: /\.js$/,
       exclude: /(node_modules|bower_components)/,
-      loader: 'babel-loader?presets[]=env'
+      loader: 'babel-loader?presets[]=env&plugins[]=transform-object-rest-spread'
     }, {
       test: /\.txt$/,
       use: 'raw-loader'

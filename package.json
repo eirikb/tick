@@ -1,6 +1,6 @@
 {
   "name": "tick-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "bin": {
     "tick": "cli.js"
   },
@@ -19,6 +19,7 @@
     "meow": "^3.7.0",
     "raw-loader": "^0.5.1",
     "webpack": "^2.2.1",
-    "ws": "^2.2.0"
+    "ws": "^2.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
   }
 }
