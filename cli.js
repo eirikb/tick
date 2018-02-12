@@ -26,13 +26,19 @@ const wss = new WebSocket.Server({
   server
 });
 
+const moduleLocation = path.join(__dirname, 'node_modules');
+
 const compiler = webpack({
   entry: [path.join(__dirname, 'hack.js'), path.join(process.cwd(), cli.input[0])],
+  resolveLoader: {
+    modules: [moduleLocation]
+  },
   module: {
     loaders: [{
       test: /\.js$/,
       exclude: /(node_modules|bower_components)/,
-      loader: 'babel-loader?presets[]=env&plugins[]=transform-object-rest-spread'
+      loader: 'babel-loader?presets[]=env&plugins[]=transform-object-rest-spread',
+      include: [moduleLocation]
     }, {
       test: /\.txt$/,
       use: 'raw-loader'
