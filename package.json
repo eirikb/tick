@@ -2,7 +2,8 @@
   "name": "tick-cli",
   "version": "1.0.4",
   "bin": {
-    "tick": "cli.js"
+    "tick": "cli.js",
+    "tick-cli": "cli.js"
   },
   "repository": {
     "type": "git",
