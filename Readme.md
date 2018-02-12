@@ -1,5 +1,10 @@
 # tick
 
+    npx tick-cli ./script.js
+   
+Then copy the script snippet from terminal into DevTools console.
+
+## Example
 ![Example](https://i.imgur.com/rKXWueE.png)
 Example of reddit api using Chrome.
 
@@ -13,13 +18,6 @@ Great for testing APIs (like Postman, just via scripting).
   * Works on HTTPS-sites without certificate hassle.
   * Script is injected on-save (note, it is *not* HMR, scripts are never cleared, `setInterval` will exist forever).
   * Scripts are just files, so git works great.
-
-## Run
-
-    npm i tick-cli
-    ./node_modules/.bin/tick ./script.js
-
-Then copy the script snippet from terminal into DevTools console.
 
 ## License
 
