@@ -1,8 +1,8 @@
 # tick
 
+Quick and easy REPL for DevTools Console, with live reload, module loading and babel transpilation.
+
     npx tick-cli ./script.js
-   
-Then copy the script snippet from terminal into DevTools console.
 
 ## Example
 ![Example](https://i.imgur.com/rKXWueE.png)
