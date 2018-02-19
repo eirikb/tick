@@ -1,6 +1,6 @@
 {
   "name": "tick-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "bin": {
     "tick": "cli.js",
     "tick-cli": "cli.js"
