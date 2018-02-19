@@ -5,8 +5,7 @@ Quick and easy REPL for DevTools Console, with live reload, module loading and b
     npx tick-cli ./script.js
 
 ## Example
-![Example](https://i.imgur.com/rKXWueE.png)
-Example of reddit api using Chrome.
+![Example](https://i.imgur.com/3ELTou3.gif)
 
 For testing purposes, and general DevTools console hacking.  
 If you use a lot of console, snippets or workspace this could be a nice alternative.  
